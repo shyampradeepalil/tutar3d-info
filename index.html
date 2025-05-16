@@ -2,21 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TutAR by Infusory</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      display: flex;
-      justify-content: center;
-
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>TutAR </title>
+  <title>Welcome to TutAR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TutAR is an Augmented Reality platform by Infusory that transforms classrooms with interactive 3D learning.">
   <style>
@@ -24,6 +10,8 @@
       --purple: #441089;
       --pink: #c6177b;
       --white: #ffffff;
+      --violet: #7913cc;
+      --coral: #f5576c;
       --black: #000000;
     }
 
@@ -35,37 +23,43 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--white);
+      background: linear-gradient(to bottom right, var(--white), #f4edff);
       color: var(--black);
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      padding: 30px;
       text-align: center;
-      padding: 20px;
     }
 
     .container {
+      background-color: var(--white);
+      border: 2px solid var(--violet);
+      border-radius: 16px;
+      padding: 40px 30px;
       max-width: 600px;
+      box-shadow: 0 8px 30px rgba(100, 0, 200, 0.1);
     }
 
     img.logo {
-      max-width: 200px;
-      margin-bottom: 30px;
+      max-width: 180px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2rem;
       color: var(--purple);
       margin-bottom: 15px;
     }
 
     p {
-      font-size: 1.1em;
-      margin-bottom: 25px;
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 30px;
     }
 
-    a.button {
+    .button {
       display: inline-block;
       padding: 12px 24px;
       background-color: var(--purple);
@@ -73,20 +67,25 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
       transition: background 0.3s ease;
     }
 
-    a.button:hover {
+    .button:hover {
       background-color: var(--pink);
     }
 
     @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+      }
+
       h1 {
-        font-size: 1.5em;
+        font-size: 1.6rem;
       }
 
       p {
-        font-size: 1em;
+        font-size: 1rem;
       }
     }
   </style>
@@ -94,12 +93,11 @@
 <body>
   <div class="container">
     <img class="logo" src="https://tutar.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPurpel200.0b6209e0.png&w=828&q=75" alt="TutAR Logo" />
-    <h1>Welcome to TutAR</h1>
-    <p>TutAR is an award-winning Augmented Reality platform by Infusory Future Tech Labs that brings 3D interactive learning into classrooms.</p>
-    <a class="button" href="https://tutar.app">Visit tutar.app</a>
+    <h1>Experience Learning in 3D</h1>
+    <p><strong>TutAR</strong> is an Augmented Reality platform by Infusory that transforms classroom learning into an immersive experience using interactive 3D models.</p>
+    <a class="button" href="https://tutar.app">Go to tutar.app</a>
   </div>
 
-  <!-- Optional auto-redirect -->
   <script>
     setTimeout(() => {
       window.location.href = "https://tutar.app";
